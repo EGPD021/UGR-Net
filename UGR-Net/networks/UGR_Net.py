@@ -648,7 +648,7 @@ class ResnetModel(nn.Module):
         e_a = torch.mul(b_a, S_a.expand(b_a.shape))
         alpha_a = e_a + 1
         return alpha_a
-
+    def forward(self, x, is_train):
         sfs = []
         if random.random() > 0.5:
             data_aug = True

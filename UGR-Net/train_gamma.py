@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 
 from dataloaders.normalize import normalize_image
 from torchnet import meter
-from networks.EGPD_Net import ResnetModel, GateWithUncertainty
+from networks.UGR_Net import ResnetModel, GateWithUncertainty
 from config import *
 import numpy as np
 from tensorboardX import SummaryWriter
